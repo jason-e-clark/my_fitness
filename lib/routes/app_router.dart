@@ -3,7 +3,6 @@ import 'package:go_router/go_router.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:my_fitness/screens/home_screen.dart';
 import 'package:my_fitness/screens/onboarding_screen.dart';
-import 'package:my_fitness/screens/settings_screen.dart';
 
 final GoRouter router = GoRouter(
   routes: [
