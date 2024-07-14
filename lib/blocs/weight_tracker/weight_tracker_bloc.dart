@@ -8,7 +8,8 @@ part 'weight_tracker_state.dart';
 class WeightTrackerBloc extends Bloc<WeightTrackerEvent, WeightTrackerState> {
   final WeightRepository repository;
 
-  WeightTrackerBloc(this.repository) : super(WeightTrackerInitial()) {
+  WeightTrackerBloc({required this.repository})
+      : super(WeightTrackerInitial()) {
     on<LoadWeightEntries>(_onLoadWeightEntries);
     on<AddWeightEntry>(_onAddWeightEntry);
     on<UpdateWeightEntry>(_onUpdateWeightEntry);
